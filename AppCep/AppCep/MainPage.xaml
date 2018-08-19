@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:AppCep"
              x:Class="AppCep.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#FFBF00" Padding="35" Spacing="30">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Image Source="LogoCorreios.png" />
+        <Entry Placeholder="Digite o CEP" PlaceholderColor="#FFBF00" BackgroundColor="White" x:Name="InputCep"/>
+        <Button Text="BUSCAR" TextColor="White" BackgroundColor="Blue" x:Name="Btn_send" />
+        <Label Text="" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand"
+           x:Name="lbl_result"    />
     </StackLayout>
 
 </ContentPage>
